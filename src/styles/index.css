@@ -1,0 +1,156 @@
+@import url(/Users/gaofeng/Desktop/nz1903/my-app/src/styles/fonts/iconfont.css);
+@import url(/Users/gaofeng/Desktop/nz1903/my-app/src/styles/animate.css);
+@import url(/Users/gaofeng/Desktop/nz1903/my-app/src/styles/swiper.min.css);
+html {
+  font-size: 62.5%;
+  font-family: "Microsoft yahei";
+}
+
+body, h1, h2, h3, h4, h5, h6, blockquote, ol, ul, dl, dd, p, textarea, input, select, option, form {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f5f4f0;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 16px;
+}
+
+ol, ul, textarea, input, option, th, td {
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-size: 100%;
+}
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+.clearfix:after {
+  content: '.';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+
+input[type=text], textarea {
+  -webkit-appearance: none;
+}
+
+input:focus {
+  -webkit-user-modify: read-write-plaintext-only;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+a, textarea, input {
+  outline: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+textarea {
+  overflow: auto;
+  resize: none;
+}
+
+html, body, #app, .box, .main {
+  width: 100vw;
+  height: 100vh;
+}
+
+#app {
+  width: 100%;
+  height: 375px;
+  color: #333;
+  font-size: 70px;
+  /*no*/
+}
+
+.h2 {
+  color: red;
+  font-size: 60px;
+}
+
+.some {
+  border: 2px solid darkmagenta;
+}
+
+.btn {
+  background: darkmagenta;
+}
+
+@keyframes enter {
+  from {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes leave {
+  from {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+}
+
+.fade-enter-active, .enter {
+  animation: enter .6s;
+}
+
+.fade-leave-active, .leave {
+  animation: leave .6s;
+}
+
+.moveIn {
+  animation: zoomInDown 1s;
+}
+
+.moveOut {
+  animation: zoomOutDown 1s;
+}

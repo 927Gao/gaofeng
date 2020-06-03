@@ -1,0 +1,60 @@
+@keyframes move {
+  0% {
+    background-position: -100px 0;
+  }
+  50% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -100px 0;
+  }
+}
+
+.l-box {
+  height: 100%;
+  width: 100%;
+  background: url(http://data.1000phone.net/static/img/login-bgimg.105cd7b.jpg) 0/cover no-repeat;
+  background-size: 120% 100%;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  overflow: hidden;
+  position: relative;
+  -webkit-animation: move 20s linear infinite;
+  animation: move 20s linear infinite;
+}
+
+.l-form {
+  width: 420px;
+  height: 320px;
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.33);
+  box-shadow: 5px 5px 16px rgba(0, 0, 0, 0.1), -5px -5px 16px rgba(0, 0, 0, 0.1);
+}
+
+.ant-tabs-nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-btn {
+  width: 100%;
+}
+
+.c-top {
+  margin-top: 15px;
+}
+
+.sms-box {
+  display: flex;
+}
+
+.zhu-btn {
+  margin-left: 20px;
+}

@@ -1,0 +1,54 @@
+
+
+
+@import "common";
+@import "fonts/iconfont.css";
+@import "animate.css";
+@import "swiper.min.css";
+
+html,body,#app,.box,.main{
+    width:100vw;
+    height:100vh;
+}
+
+#app{
+    width:100%;
+    height:375px;
+    color:#333;
+    font-size: 70px;/*no*/
+}
+
+.h2{
+    color:red;
+    font-size:60px;
+}
+.some{
+    border:2px solid darkmagenta;
+}
+
+.btn{
+    background: darkmagenta;
+}
+@keyframes enter{
+    from{opacity: 0;transform: translateY(-10%)}
+    to{opacity: 1;transform: translateY(0%)}
+}
+@keyframes leave{
+    from{opacity: 1;transform: translateY(0%)}
+    to{opacity: 0;transform: translateY(10%)}
+}
+.fade-enter-active, .enter{
+    animation: enter .6s;
+}
+.fade-leave-active , .leave {
+    animation: leave .6s;
+}
+
+.moveIn{
+    animation: zoomInDown 1s;
+}
+
+.moveOut{
+    animation: zoomOutDown 1s;
+}
+
